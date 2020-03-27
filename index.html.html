@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta charset-"utf-8">
+			<style>
+				table,td
+					{
+						border: 2px solid green;
+					}
+			</style>
+	</head>
+<body>
+
+	<table id="Tabelka">
+		<tr>
+			<td>Taliczka</td>
+			<td>Arek</td>
+		</tr>
+
+
+	</table><br>
+		
+		<button type="button" onclick="klik()">Dodaj</button>
+
+<script>
+function klik()
+{
+		var tabela = document.getElementById("Tabelka");
+		for (i=0; i<=10; i++)
+			{
+				var row = tabela.insertRow(0);
+				var cell1 = row.insertCell(0);
+				var cell2 = row.insertCell(1);
+				var numer = (0,i);
+
+				cell1.innerHTML ="10"+1+(numer*13);
+				cell1.innerHTML = "Arek";
+			}
+
+}
+</script>
+</body>
+</html>
